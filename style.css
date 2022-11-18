@@ -10,7 +10,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     line-height: 1.7;
 }
@@ -20,13 +20,13 @@ display: inline-block;
 background: #FFE492;
 color: #043873 !important;
 border-radius: 8px;
-padding: 16px 24px !important;
+padding: 14px 22px !important;
 }
 .theme-button-one{
     display: inline-block;
     background: #4F9CF9;
     border-radius: 8px;
-    padding: 16px 40px !important;
+    padding: 14px 38px !important;
     text-decoration: none;
     color: #ffffff;
     transition: 0.3s;
@@ -38,7 +38,7 @@ padding: 16px 24px !important;
     display: inline-block;
     background: #4F9CF9;
     border-radius: 8px;
-    padding: 20px 40px !important;
+    padding: 18px 38px !important;
     text-decoration: none;
     color: #ffffff;
     transition: 0.3s;
@@ -86,7 +86,7 @@ padding: 16px 24px !important;
         margin-top: 15px;
     }
     .header-area .nav-link{
-        padding: 16px 0 !important;
+        padding: 14px 0 !important;
         margin-left: 0 !important;
     }
     .header-area .nav-link{
