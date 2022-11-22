@@ -323,10 +323,45 @@ letter-spacing: -0.02em;
     .your-work-area .theme-text p{
         color: #ffffff;
     }
+    @media (max-width: 991px) {
+        .your-work-area {
+            padding: 80px 0;
+        }
+    }
+
 
     /* your task area css */
     .your-task-area{
         padding: 140px 0;
         background-color: #ffffff;
     }
+    @media (max-width: 991px) {
+        .your-task-area {
+            padding: 80px 0;
+        }
+    }
 
+    /* sponser-area css */
+
+
+    .sponser-area{
+        padding: 140px 0;
+        background-color: #ffffff; 
+    }
+    .sponser-area .theme-text{
+        margin-bottom: 80px;
+        width: auto;
+    }
+    .single-sponser img{
+        height: 55px;
+    }
+
+    @media (max-width: 991px) {
+        .sponser-area {
+            padding-top: 80px 0;
+            padding-bottom: 30px;
+        }
+        .single-sponser{
+            margin-bottom: 50px;
+        }
+    }
