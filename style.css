@@ -239,9 +239,9 @@ letter-spacing: -0.02em;
 
     /* customised area css */
     
-    .customise-area {
-        background-color: #ffffff
+    .customise-area{
         padding: 140px 0;
+        background-color: #ffffff;
     }
     
     @media (max-width: 991px) {
@@ -324,4 +324,9 @@ letter-spacing: -0.02em;
         color: #ffffff;
     }
 
+    /* your task area css */
+    .your-task-area{
+        padding: 140px 0;
+        background-color: #ffffff;
+    }
 
