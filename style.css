@@ -365,3 +365,51 @@ letter-spacing: -0.02em;
             margin-bottom: 50px;
         }
     }
+
+    /* apps area css */
+    .apps-area{
+        background-image: url(images/hero-b.png);
+        padding: 140px 0;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .apps-area .theme-text h3{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 60px;
+        letter-spacing: -0.02em;
+        padding-bottom: 15px;
+    }
+    .apps-area .theme-text p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        padding-bottom: 50px;
+    }
+
+
+    @media (max-width: 991px) {
+        .apps-area{
+            padding: 80px 0;
+        }
+        .apps-image{
+            margin-bottom: 80px;
+        }
+        .apps-area .theme-text h3{
+            font-size: 36px;
+            text-align: center;
+        }
+        .apps-area .theme-text p{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .apps-area .theme-button-all{
+            margin-bottom: 50px;
+        }
+    }
