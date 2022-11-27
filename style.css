@@ -61,9 +61,14 @@ padding: 14px 22px !important;
 }
 
 
-.theme-button img{
+.theme-button-one i{
     margin-left: 10px;
 }
+
+.theme-button-all i{
+    margin-left: 10px;
+}
+
 .theme-text h3{
     font-size: 62px;
     color: #212529;
@@ -110,33 +115,7 @@ padding: 14px 22px !important;
     border: none;
     box-shadow: none;
 }
-@media (max-width: 991px) {
-    .theme-button{
-        width: 100%;
-        text-align: center;
-        margin-left: 0 !important;
-        margin-top: 15px;
-    }
-    .theme-button-one{
-        width: 100%;
-        text-align: center;
-        margin-left: 0 !important;
-        margin-top: 15px;
-    }
-    .header-area .nav-link{
-        padding: 14px 0 !important;
-        margin-left: 0 !important;
-    }
-    .header-area .nav-link{
-        position: relative;
-    }
-    .header-area .nav-link::after{
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
+
 
 /* hero css */
 .hero-area{
@@ -161,22 +140,7 @@ letter-spacing: -0.02em;
 .hero-area .theme-button-one{
     margin-top: 30px;
 }
-
-@media (max-width: 991px) {
-    .hero-area{
-        padding: 80px 0;
-    }
-    .hero-text{
-        text-align: center;
-    }
-    .hero-text h3   {
-        font-size: 36px;
-    }
-    .hero-area .theme-button-all{
-        margin-top: 60px;
-        margin-bottom: 100px;
-    }
-}
+  
 
 /* management area css */
 .management-area{
@@ -186,29 +150,22 @@ letter-spacing: -0.02em;
 .work-management{
     margin-top: 100px;
 }
-
-@media (max-width: 991px) {
-    .management-area{
-        padding: 80px 0;
-    }
-    .work-management{
-        margin-top: 60px;
-    }
-    .theme-text {
-        text-align: center;
-    }
-    .theme-text h3{
-        font-size: 36px;
-    }
-    .management-area .theme-button-all{
-        margin-bottom: 50px;
-    }
+.work-management .theme-text h3 span::after{
+    background-image: url(images/together-element.png);
+    background-size: contain;
+    background-position: bottom;
 }
 
 /* extension area css */
 .extension-area{
     padding: 140px 0;
     background-color: #043873;
+}
+.extension-area .theme-text h3 span::after{
+    background-image: url(images/extension-element.png);
+    top: -10px;
+    background-size: contain;
+    background-position: bottom;
 }
 .extension-area .theme-text h3{
     color: #ffffff;
@@ -227,28 +184,16 @@ letter-spacing: -0.02em;
     letter-spacing: -0.02em;
     }
 
-    @media (max-width: 991px) {
-        .extension-area{
-            padding: 80px 0;
-        }
-        
-        .extension-area .theme-button-all{
-            margin-bottom: 50px;
-        }
-    }
-
     /* customised area css */
     
     .customise-area{
         padding: 140px 0;
         background-color: #ffffff;
     }
-    
-    @media (max-width: 991px) {
-        .customise-area {
-            padding: 80px 0;
-        }
-
+    .customise-area .theme-text h3 span::after{
+        background-image: url(images/need-element.png);
+        background-size: contain;
+        background-position: bottom;
     }
 
 
@@ -261,6 +206,11 @@ letter-spacing: -0.02em;
     }
     .pricing-area .theme-text{
         margin-bottom: 60px;
+    }
+    .pricing-area .theme-text h3 span::after{
+        background-image: url(images/plan-element.png);
+        background-size: contain;
+        background-position: bottom;
     }
 
     .single-pricing{
@@ -286,12 +236,19 @@ letter-spacing: -0.02em;
     .single-pricing ul li{
         list-style: none;
         margin-bottom: 28px;
+        display: flex;
+        align-items: center;
     }
     .single-pricing ul li:last-child {
         margin: 0;
     }
     .single-pricing ul li img{
         padding-right: 15px;
+    }
+    .single-pricing img{
+        height: 20px !important;
+        width: 35px !important;
+    
     }
 
     .special-pricing{
@@ -302,15 +259,24 @@ letter-spacing: -0.02em;
     .special-pricing h2{
         color: #FFE492;
     }
-
-    @media (max-width: 991px) {
-        .pricing-area {
-            padding: 80px 0;
-        }
-        .single-pricing{
-            margin-bottom: 30px;
-        }
+    .pricing-area .owl-stage{
+        display: flex;
+        align-items: center;
     }
+    .pricing-area .owl-dots{
+        text-align: center;
+    }
+    .pricing-area .owl-dots button{
+        height: 15px;
+        width: 15px;
+        background-color: #4f9cf9 !important;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .pricing-area .owl-dots button.active{
+        background-color: #043873 !important;
+    }
+
 
     /* your-work-area css */
     .your-work-area{
@@ -323,10 +289,10 @@ letter-spacing: -0.02em;
     .your-work-area .theme-text p{
         color: #ffffff;
     }
-    @media (max-width: 991px) {
-        .your-work-area {
-            padding: 80px 0;
-        }
+    .your-work-area .theme-text h3 span::after{
+        background-image: url(images/you-element.png);
+        background-size: contain;
+        background-position: bottom;
     }
 
 
@@ -335,10 +301,11 @@ letter-spacing: -0.02em;
         padding: 140px 0;
         background-color: #ffffff;
     }
-    @media (max-width: 991px) {
-        .your-task-area {
-            padding: 80px 0;
-        }
+
+    .your-task-area .theme-text h3 span::after{
+        background-image: url(images/data-element.png);
+        background-size: contain;
+        background-position: bottom;
     }
 
     /* sponser-area css */
@@ -352,19 +319,15 @@ letter-spacing: -0.02em;
         margin-bottom: 80px;
         width: auto;
     }
+    .sponser-area .theme-text h3 span::after{
+        background-image: url(images/sponser-element.png);
+        background-size: contain;
+        background-position: bottom;
+    }
     .single-sponser img{
         height: 55px;
     }
 
-    @media (max-width: 991px) {
-        .sponser-area {
-            padding-top: 80px 0;
-            padding-bottom: 30px;
-        }
-        .single-sponser{
-            margin-bottom: 50px;
-        }
-    }
 
     /* apps area css */
     .apps-area{
@@ -391,30 +354,6 @@ letter-spacing: -0.02em;
     }
 
 
-    @media (max-width: 991px) {
-        .apps-area{
-            padding: 80px 0;
-        }
-        .apps-image{
-            margin-bottom: 80px;
-        }
-        .apps-area .theme-text h3{
-            font-size: 36px;
-            text-align: center;
-        }
-        .apps-area .theme-text p{
-            font-size: 18px;
-            line-height: 30px;
-            text-align: center;
-            letter-spacing: -0.02em;
-        }
-
-        .apps-area .theme-button-all{
-            margin-bottom: 50px;
-        }
-    }
-
-
     /* testimonial-area css */
 
     .testimonial-area{
@@ -425,24 +364,35 @@ letter-spacing: -0.02em;
         margin-bottom: 50px;
     }
 
+    .testimonial-area .theme-text h3 span::after{
+        background-image: url(images/says-element.png);
+        background-size: contain;
+        background-position: bottom;
+    }
+
     .single-testimonial{
         background: #4f9cf9;
+        color: #ffffff;
         box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 50px 30px;
-        color: #212529;
+        transition: 0.3s;
     }
+    .single-testimonial:hover{
+        background-color: #ffffff;
+        color: #212529;  
+        cursor: pointer; 
+    }
+
     .testimonial-text{
         border-bottom: 1px solid #ffffff;
     }
-    .testimonial-text img{
-        margin-bottom: 40px;
-        height: 60px;
-        width: auto !important;
+    .testimonial-text i{
+        font-size: 60px;
     }
+    
     .testimonial-text p{
         margin-bottom: 25px;
-        color: #ffffff;
     }
     .testimonial-author{
         margin-top: 40px;
@@ -457,7 +407,6 @@ letter-spacing: -0.02em;
     }
     .author-text p{
         margin-bottom: 0;
-        color: #ffffff;
     }
     .testimonial-area .owl-dots{
         text-align: center;
@@ -478,11 +427,6 @@ letter-spacing: -0.02em;
         background-color: #043873 !important;
     }
 
-    @media (max max-width:991px){
-        .apps-area{
-            padding: 80px 0;
-        }
-    }
 
     /* trial area css */
     .trial-area{
@@ -507,29 +451,12 @@ letter-spacing: -0.02em;
         text-decoration: none;
     }
 
-    @media (max max-width:991px){
-        .trial-area{
-            padding: 80px 0;
-        } 
-
-        .trial-text h3 {
-            font-size: 36px;
-        }
-        .trial-text p{
-            font-size: 18px;
-        }
-        .trial-img a{
-            margin: 0;
-            margin-right: 40px;
-        }
-    }
-
 
 
     /* footer area css */
     .footer-area{
         background-color: #043873;
-        border-top: 1px solid #4f9cf9;
+        border-top: 1px solid #2e4e73;
         padding-top: 140px;
     }
     .footer-top{
@@ -596,7 +523,181 @@ letter-spacing: -0.02em;
         margin-left: 32px;
     }
 
-    @media (max max-width:991px){
+    @media (max-width: 1399px) {
+        .header-area{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .header-area{
+            font-size: 14px;
+        }
+        .header-area .nav-link{
+            padding: 5px 10px !important;
+        }
+    }
+
+
+    @media (max-width: 991px) {
+        /* basic css */
+        .theme-button{
+            width: 100%;
+            text-align: center;
+            margin-left: 0 !important;
+            margin-top: 15px;
+        }
+        .theme-button-one{
+            width: 100%;
+            text-align: center;
+            margin-left: 0 !important;
+            margin-top: 15px;
+        }
+        .header-area{
+            font-size: 18px;
+        }
+
+        /* header area css */
+        .header-area .nav-link{
+            padding: 14px 0 !important;
+            margin-left: 0 !important;
+        }
+        .header-area .nav-link{
+            position: relative;
+        }
+        .header-area .nav-link::after{
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+
+         /* hero area css */
+        .hero-area{
+            padding: 80px 0;
+        }
+        .hero-text{
+            text-align: center;
+        }
+        .hero-text h3   {
+            font-size: 36px;
+        }
+        .hero-area .theme-button-all{
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+
+
+         /* management area css */
+        .management-area{
+            padding: 80px 0;
+        }
+        .work-management{
+            margin-top: 60px;
+        }
+        .theme-text {
+            text-align: center;
+        }
+        .theme-text h3{
+            font-size: 36px;
+        }
+        .management-area .theme-button-all{
+            margin-bottom: 50px;
+        }
+
+
+         /* extension area css */
+        .extension-area{
+            padding: 80px 0;
+        }
+        
+        .extension-area .theme-button-all{
+            margin-bottom: 50px;
+        }
+
+
+        /* customise area css */
+        .customise-area {
+            padding: 80px 0;
+        }
+       
+        /* pricing area css */
+        .pricing-area {
+            padding: 80px 0;
+        }
+        .single-pricing{
+            margin-bottom: 30px;
+        }
+       
+       
+       /* your work css */
+        .your-work-area {
+            padding: 80px 0;
+        }
+      
+      
+      /* your task css */
+        .your-task-area {
+            padding: 80px 0;
+        }
+       
+       
+       /* sponser area css */
+        .sponser-area {
+            padding-top: 80px 0;
+            padding-bottom: 30px;
+        }
+        .single-sponser{
+            margin-bottom: 50px;
+        }
+
+
+        /* apps area css */
+        .apps-area{
+            padding: 80px 0;
+        }
+        .apps-image{
+            margin-bottom: 80px;
+        }
+        .apps-area .theme-text h3{
+            font-size: 36px;
+            text-align: center;
+        }
+        .apps-area .theme-text p{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .apps-area .theme-button-all{
+            margin-bottom: 50px;
+        }
+       
+        .apps-area{
+            padding: 80px 0;
+        }
+
+
+        /* trial area css */
+        .trial-area{
+            padding: 80px 0;
+        } 
+        .trial-text h3 {
+            font-size: 36px;
+        }
+        .trial-text p{
+            font-size: 18px;
+        }
+        .trial-img a{
+            margin: 0;
+            margin-right: 40px;
+        } 
+        
+        
+        /* footer area css */
         .footer-top{
             text-align: center;
         }
@@ -606,10 +707,13 @@ letter-spacing: -0.02em;
         .footer-link{
             margin: 40px 0;
         }
+        .footer-link h3{
+            margin-top: 60px;
+        }
         .fotter-contact{
             margin-top: 40px;
         }
-        footer-bottom{
+        .footer-bottom{
             border-top: none;
         }
         .footer-lan{
@@ -628,5 +732,5 @@ letter-spacing: -0.02em;
         margin: 0 16px;
         }
 
-    
     }
+
